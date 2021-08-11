@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90784BF26C471D500DB675F /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90784BE26C471D500DB675F /* PostListTableViewController.swift */; };
+		E90784C126C471E100DB675F /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90784C026C471E100DB675F /* PostDetailTableViewController.swift */; };
+		E90784C326C471EC00DB675F /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90784C226C471EC00DB675F /* AddPostTableViewController.swift */; };
+		E90784C526C4732C00DB675F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90784C426C4732C00DB675F /* Post.swift */; };
+		E9F064B526C477870073C5AC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F064B426C477870073C5AC /* Comment.swift */; };
+		E9F064BB26C4791C0073C5AC /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F064BA26C4791C0073C5AC /* PostController.swift */; };
 		F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F99C382211F96400D13C4C /* AppDelegate.swift */; };
 		F7F99C3E2211F96400D13C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F99C3C2211F96400D13C4C /* Main.storyboard */; };
 		F7F99C402211F96600D13C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F99C3F2211F96600D13C4C /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90784BE26C471D500DB675F /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		E90784C026C471E100DB675F /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		E90784C226C471EC00DB675F /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		E90784C426C4732C00DB675F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E9F064B426C477870073C5AC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E9F064BA26C4791C0073C5AC /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		F7F99C352211F96400D13C4C /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F99C382211F96400D13C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F99C3D2211F96400D13C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +45,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E90784B726C46F3A00DB675F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7F99C3F2211F96600D13C4C /* Assets.xcassets */,
+				F7F99C412211F96600D13C4C /* LaunchScreen.storyboard */,
+				F7F99C442211F96600D13C4C /* Info.plist */,
+				F7F99C382211F96400D13C4C /* AppDelegate.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E90784B826C46F4C00DB675F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E90784BC26C46F6E00DB675F /* CustomViews */,
+				E90784BB26C46F6300DB675F /* Storyboards */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E90784B926C46F5500DB675F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9F064B626C478F90073C5AC /* ModelControllers */,
+				E90784BD26C46F7700DB675F /* ViewControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E90784BA26C46F5C00DB675F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E90784C426C4732C00DB675F /* Post.swift */,
+				E9F064B426C477870073C5AC /* Comment.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E90784BB26C46F6300DB675F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F7F99C3C2211F96400D13C4C /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E90784BC26C46F6E00DB675F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		E90784BD26C46F7700DB675F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E90784BE26C471D500DB675F /* PostListTableViewController.swift */,
+				E90784C026C471E100DB675F /* PostDetailTableViewController.swift */,
+				E90784C226C471EC00DB675F /* AddPostTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9F064B626C478F90073C5AC /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9F064BA26C4791C0073C5AC /* PostController.swift */,
+			);
+			name = ModelControllers;
+			sourceTree = "<group>";
+		};
 		F7F99C2C2211F96400D13C4C = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +135,10 @@
 		F7F99C372211F96400D13C4C /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
-				F7F99C382211F96400D13C4C /* AppDelegate.swift */,
-				F7F99C3C2211F96400D13C4C /* Main.storyboard */,
-				F7F99C3F2211F96600D13C4C /* Assets.xcassets */,
-				F7F99C412211F96600D13C4C /* LaunchScreen.storyboard */,
-				F7F99C442211F96600D13C4C /* Info.plist */,
+				E90784BA26C46F5C00DB675F /* Model */,
+				E90784B926C46F5500DB675F /* Controllers */,
+				E90784B826C46F4C00DB675F /* Views */,
+				E90784B726C46F3A00DB675F /* Resources */,
 			);
 			path = Continuum;
 			sourceTree = "<group>";
@@ -133,6 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */,
+				E9F064B526C477870073C5AC /* Comment.swift in Sources */,
+				E90784BF26C471D500DB675F /* PostListTableViewController.swift in Sources */,
+				E90784C326C471EC00DB675F /* AddPostTableViewController.swift in Sources */,
+				E9F064BB26C4791C0073C5AC /* PostController.swift in Sources */,
+				E90784C126C471E100DB675F /* PostDetailTableViewController.swift in Sources */,
+				E90784C526C4732C00DB675F /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
